@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  background-color: $secondary-color;
+  border-bottom: 2px solid;
+  border-color: #ACACAC;
+  &__logo-btn {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__logo {
+    @include imgConfig(206px,50px,"/img/logo_mobile.svg")
+  }
+  &__btn {
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $btn-color;
+    @include main-shadow;
+    &-text {
+      margin-right: 15px;
+      @include title-mobile($main-text-color,2.2rem);
+    }
+    &-icon {
+      @include imgConfig(20px,20px,"/img/icon/in_icon.svg")
+    }
+  }
+  &__nav {
+    width: 100%;
+    padding: 15px 0px 20px;
+    &-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    &-item {
+      list-style: none;
+    }
+    &-link {
+      text-decoration: none;
+      @include title-mobile($main-text-color, 2.8rem);
+    }
+  }
+}
