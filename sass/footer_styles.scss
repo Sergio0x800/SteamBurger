@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  padding: 20px 0px;
+  border-top: 2px solid;
+  border-color: #ACACAC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+  &__logo {
+    @include imgConfig(206px,50px,"/img/logo_mobile.svg")
+  }
+  &__info-container {
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+.box {
+  width: 100%;
+  padding-top: 10px;
+  &__title {
+    @include title-mobile($main-text-color, 2.8rem)
+  }
+  &__links-item {
+    list-style: none;
+  }
+  &__links-link {
+    @include paragraph-mobile($main-text-color,1.8rem)
+  }
+}

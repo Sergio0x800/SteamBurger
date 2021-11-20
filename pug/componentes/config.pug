@@ -1,1 +1,12 @@
 -var navLinks = ["Home","Ordenar","Cobertura"]
+-var titlesFooter = ["Conocénos", "Redes sociales", "Mi cuenta"]
+-var knowLinks = ["Sucursales","Contáctanos","Términos y condiciones de uso","Política de privacidad"]
+-var socialNetworks = ["Instagram","Facebook"]
+-var myCountLinks = ["Pedir","Mis pedidos","Mis direcciones","Cambiar contraseña"]
+
+mixin footerBoxes(titulo,enlaces)
+  .box
+    h2.box__title= titulo
+    ul.box__links-container 
+      each enlace in enlaces 
+        li.box__links-item: a.box__links-link= enlace

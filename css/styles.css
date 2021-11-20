@@ -78,4 +78,47 @@ html {
   color: #000000;
 }
 
+.footer {
+  width: 100%;
+  padding: 20px 0px;
+  border-top: 2px solid;
+  border-color: #ACACAC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F27B13;
+}
+.footer__logo {
+  background-image: url("/img/logo_mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 206px;
+  height: 50px;
+}
+.footer__info-container {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.box {
+  width: 100%;
+  padding-top: 10px;
+}
+.box__title {
+  font-family: "Dancing Script", serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #000000;
+}
+.box__links-item {
+  list-style: none;
+}
+.box__links-link {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
 /*# sourceMappingURL=styles.css.map */
