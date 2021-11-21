@@ -3,6 +3,7 @@
 -var knowLinks = ["Sucursales","Contáctanos","Términos y condiciones de uso","Política de privacidad"]
 -var socialNetworks = ["Instagram","Facebook"]
 -var myCountLinks = ["Pedir","Mis pedidos","Mis direcciones","Cambiar contraseña"]
+-var menuTitles = [["Las de siempre","/img/la_de_siempre.png"],["Pequeños antojos","/img/antojos.png"],["Combos infantiles","/img/infantiles.png"],["Bebidas y malteadas","/img/bebidas.png"],["Acompañamientos","/img/acompañamientos.png"]]
 
 mixin footerBoxes(titulo,enlaces)
   .box
@@ -10,3 +11,8 @@ mixin footerBoxes(titulo,enlaces)
     ul.box__links-container 
       each enlace in enlaces 
         li.box__links-item: a.box__links-link= enlace
+
+mixin menuBox(menu)
+  a.menu-box(href="#")
+    img.menu-box__img(src= menu[1], alt="")
+    span.menu-box__title= menu[0]

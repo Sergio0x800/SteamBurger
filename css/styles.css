@@ -78,6 +78,37 @@ html {
   color: #000000;
 }
 
+.main {
+  width: 100%;
+  padding: 30px 20px 40px;
+  background-color: #F2A516;
+}
+.main .menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.menu-box {
+  width: 335px;
+  height: 250px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 9px #000000;
+}
+.menu-box__title {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 9px #000000, -2px -2px 9px #000000, 0px 0px 9px #000000;
+  position: absolute;
+}
+
 .footer {
   width: 100%;
   padding: 20px 0px;

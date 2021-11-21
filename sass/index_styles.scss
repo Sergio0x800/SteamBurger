@@ -1,0 +1,26 @@
+.main {
+  width: 100%;
+  padding: 30px 20px 40px;
+  background-color: $background-color;
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+}
+.menu-box {
+  width: 335px;
+  height: 250px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include main-shadow;
+  &__title {
+    @include paragraph-mobile($optional-text-color,3.6rem, 700);
+    text-shadow: 2px 2px 9px #000000, -2px -2px 9px #000000, 0px 0px 9px #000000;
+    position: absolute;
+  }
+}

@@ -25,6 +25,6 @@
     list-style: none;
   }
   &__links-link {
-    @include paragraph-mobile($main-text-color,1.8rem)
+    @include paragraph-mobile($main-text-color,1.8rem, 400)
   }
 }

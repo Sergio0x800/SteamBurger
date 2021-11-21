@@ -1,2 +1,10 @@
 extend componentes/template.pug
 block content
+  main.main 
+    section.slider 
+      .slider__img-container: img.slider__img(src="", alt="")
+      .slider__img-container: img.slider__img(src="", alt="") 
+      .slider__img-container: img.slider__img(src="", alt="")   
+    section.menu
+      each menuTitle in menuTitles 
+        +menuBox(menuTitle)

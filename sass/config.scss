@@ -15,9 +15,9 @@ $paragraph-font: 'EB Garamond', serif;
   font-size: $size;
   color: $color;
 }
-@mixin paragraph-mobile($color,$font-size) {
+@mixin paragraph-mobile($color,$font-size,$font-weight) {
   font-family: $paragraph-font;
-  font-weight: 400;
+  font-weight: $font-weight;
   font-size: $font-size;
   color: $color;
 }
