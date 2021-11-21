@@ -8,3 +8,8 @@ block content
     section.menu
       each menuTitle in menuTitles 
         +menuBox(menuTitle)
+    section.address 
+      h2.address__title Encuéntranos en
+      .address__container 
+        each address in addressInfo
+          +addressBox(address)

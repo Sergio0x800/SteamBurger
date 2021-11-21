@@ -8,6 +8,25 @@
     flex-wrap: wrap;
     gap: 35px;
   }
+  .address {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      @include title-mobile($main-text-color,2.8rem);
+      margin-bottom: 20px;
+    }
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    
+  }
 }
 .menu-box {
   width: 335px;
@@ -22,5 +41,23 @@
     @include paragraph-mobile($optional-text-color,3.6rem, 700);
     text-shadow: 2px 2px 9px #000000, -2px -2px 9px #000000, 0px 0px 9px #000000;
     position: absolute;
+  }
+}
+.addressBox {
+  width: 335px;
+  height: 132px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  @include main-shadow;
+  &__position {
+    @include title-mobile($main-text-color, 2.2rem);
+  }
+  &__horario {
+    @include paragraph-mobile($main-text-color, 1.8rem, 400);
+  }
+  &__horario2 {
+    @include paragraph-mobile($main-text-color, 1.8rem, 400);
+
   }
 }

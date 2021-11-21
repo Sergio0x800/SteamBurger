@@ -89,6 +89,27 @@ html {
   flex-wrap: wrap;
   gap: 35px;
 }
+.main .address {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .address__title {
+  font-family: "Dancing Script", serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.main .address__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
 
 .menu-box {
   width: 335px;
@@ -107,6 +128,33 @@ html {
   color: #FFFFFF;
   text-shadow: 2px 2px 9px #000000, -2px -2px 9px #000000, 0px 0px 9px #000000;
   position: absolute;
+}
+
+.addressBox {
+  width: 335px;
+  height: 132px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 9px #000000;
+}
+.addressBox__position {
+  font-family: "Dancing Script", serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: #000000;
+}
+.addressBox__horario {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000000;
+}
+.addressBox__horario2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #000000;
 }
 
 .footer {

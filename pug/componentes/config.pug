@@ -4,6 +4,7 @@
 -var socialNetworks = ["Instagram","Facebook"]
 -var myCountLinks = ["Pedir","Mis pedidos","Mis direcciones","Cambiar contraseña"]
 -var menuTitles = [["Las de siempre","/img/la_de_siempre.png"],["Pequeños antojos","/img/antojos.png"],["Combos infantiles","/img/infantiles.png"],["Bebidas y malteadas","/img/bebidas.png"],["Acompañamientos","/img/acompañamientos.png"]]
+-var addressInfo = [["Calle 15 de septiembre", "Calle 15 L15A-84", "Lunes a jueves y domingo de 12:00 a 21:00 Viernes y sábado de 12:00 a 22:00"], ["Calle 6", "Calle 6 L15A-84", "Lunes a jueves y domingo de 12:00 a 21:00 Viernes y sábado de 12:00 a 22:00"], ["Parque Central", "Calle 6 L15A-84", "Lunes a jueves y domingo de 12:00 a 21:00 Viernes y sábado de 12:00 a 22:00"]]
 
 mixin footerBoxes(titulo,enlaces)
   .box
@@ -16,3 +17,9 @@ mixin menuBox(menu)
   a.menu-box(href="#")
     img.menu-box__img(src= menu[1], alt="")
     span.menu-box__title= menu[0]
+
+mixin addressBox(address)
+  .addressBox 
+    h2.addressBox__position= address[0]
+    p.addressBox__horario= address[1] 
+    p.addressBox__horario2= address[2]
